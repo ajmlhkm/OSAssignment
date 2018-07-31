@@ -1,0 +1,34 @@
+# README FILE FOR Threads
+
+1. In order to compile the program type:
+    "make"
+
+2a. In order to run your program type:
+    "make run"
+
+2b. Or you can run it manually by typing:
+    "./sds r w t1 t2"
+    Where all of these values are positive integers
+
+3. If you want to clean everything typeL
+    "make clean"
+    NOTE: If you want to run this program multiple times please run step
+          3 everything. Because the sim_out.txt file is opened for 
+          appending not writing.
+
+NOTES:
+    * Everything works fine
+    * If your t2 time is 0 it might take a bit longer to get the output
+      but I am 100% sure that it is not in deadlock. I tested this with
+      the shared_data.txt file of 100 and it worked after 20 minutes.
+    * Your shared_data.txt file must be separated by spaces all in one line
+    * If you change shared_data.txt file you have to go to sds.h and 
+      change the constant of FILE_SIZE to the new size of your shared_data
+      -.txt. 
+    * If you want to change the BUFFER_SIZE it is located inside 
+      sds.h
+
+FILES:
+    sds.c 
+    sds.h
+    shared_data.txt - Test input file

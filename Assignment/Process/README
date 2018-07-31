@@ -1,0 +1,35 @@
+# README FILE FOR Processes
+
+1. In order to compile the program type:
+    "make"
+
+2a. In order to run your program type:
+    "make run"
+
+2b. Or you can run it manually by typing:
+    "./sds r w t1 t2"
+    Where all of these values are positive integers
+
+3. If you want to clean everything typeL
+    "make clean"
+    NOTE: If you want to run this program multiple times please run step
+          3 everything. Because the sim_out.txt file is opened for 
+          appending not writing.
+
+NOTES:
+    * Everything works fine
+    * Your shared_data.txt file must be separated by spaces all in one line
+    * If you change shared_data.txt file you have to go to sds.h and 
+      change the constant of FILE_SIZE to the new size of your shared_data
+      -.txt. 
+    * If you want to change the BUFFER_SIZE it is located inside 
+      reader_writer.h
+
+FILES:
+    sds.c - Main that does all the initializing and cleaningup
+    sds.h
+    fileio.c - Does the read from file and write out file
+    fileio.h
+    reader_writer.c - Contains the reader() and writer() functions
+    reader_writer.h 
+    shared_data.txt - Test input file
